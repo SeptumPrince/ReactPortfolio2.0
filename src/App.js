@@ -4,10 +4,10 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import AboutPage from "./pages/AboutPage";
-import HomePage from "./pages/HomePage";
-import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Septum Prince Coding</Navbar.Brand>
+            <Navbar.Brand>Garrett Love</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
@@ -75,6 +75,7 @@ class App extends React.Component {
             path="/contact"
             render={() => <ContactPage title={this.state.contact.title} />}
           />
+
           <Footer />
         </Container>
       </Router>
