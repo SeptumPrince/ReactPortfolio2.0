@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import "./styles.css";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 class App extends React.Component {
   constructor(props) {
@@ -14,23 +16,42 @@ class App extends React.Component {
       ],
       home: {
         title: "Septum Prince Coding",
-        subTitle: "Dangerously cheesey.",
-        description: "Look at my projects."
+        subTitle: "Dangerously Cheesy",
+        text: "Look at my work"
       },
       about: {
-        title: "About the Septum Prince"
+        title: "Meet the Septum Prince"
       },
       contact: {
-        title: "Contact Me"
+        title: "Contact"
       }
     };
   }
 
   render() {
     return (
-      <div className="App">
-        <Router></Router>
-      </div>
+      <Router>
+        <Container className="p-0" fluid={true}>
+          <Navbar className="border-bottom" bg="transparent" expand="lg">
+            <Navbar.Brand>Septum Prince Coding</Navbar.Brand>
+
+            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+            <Navbar.Collapse id="navbar-toggle">
+              <Nav className="ml-auto">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </Container>
+      </Router>
     );
   }
 }
