@@ -1,20 +1,23 @@
 import React from "react";
 
-import CardInfo from "./CardInfo";
+import CardInfo from "../components/CardInfo";
 
 function Card(props) {
   return (
-    <div>
+    <div
+      className="n-inline-block g-card"
+      onClick={(e) => props.click(props.item)}
+    >
       <img
-        className="n-inline-block n-card"
+        className="n-card-image"
         src={props.item.imgSrc}
-        alt={props.item.title}
+        alt={props.item.imgSrc}
       />
       {props.item.selected && (
         <CardInfo
           title={props.item.title}
           subTitle={props.item.subTitle}
-          link={props.item.linki}
+          link={props.item.link}
         />
       )}
     </div>
