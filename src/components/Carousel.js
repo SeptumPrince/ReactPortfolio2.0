@@ -3,6 +3,9 @@ import React from "react";
 import Card from "./Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import screenshot_iclassroom from "../assets/images/screenshot_iclassroom.jpg";
+import screenshot_covid from "../assets/images/screenshot_covid.jpg";
+// import queens from '../assets/images/evverest.png';
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -13,7 +16,7 @@ class Carousel extends React.Component {
           id: 0,
           title: "Project 1",
           subTitle: "SUBTITLE",
-          imgSrc: "../assets/images/screenshot_covid.jpg",
+          imgSrc: screenshot_covid,
           link: "",
           selected: false
         },
@@ -21,7 +24,7 @@ class Carousel extends React.Component {
           id: 1,
           title: "Project 2",
           subTitle: "SUBTITLE",
-          imgSrc: "../assets/images/screenshot_queens.jpg",
+          imgSrc: screenshot_iclassroom,
           link: "",
           selected: false
         },
@@ -29,7 +32,7 @@ class Carousel extends React.Component {
           id: 2,
           title: "Project 3",
           subTitle: "SUBTITLE",
-          imgSrc: "../assets/images/screenshot_iclassroom",
+          // imgSrc: screenshot_queens,
           link: "",
           selected: false
         }
