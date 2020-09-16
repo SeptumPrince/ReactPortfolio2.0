@@ -16,14 +16,14 @@ function ProjectCard(props) {
       {props.item.selected && (
         <Card.Body>
           <Card.Text>
-        <CardInfo
-          title={props.item.title}
-          subTitle={props.item.subTitle}
-          link={props.item.link}
-        />
-        </Card.Text>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+            <CardInfo
+              title={props.item.title}
+              subTitle={props.item.subTitle}
+              link={props.item.link}
+            />
+          </Card.Text>
+          <Card.Link href={props.item.deploy_link}>Deployed</Card.Link>
+          <Card.Link href={props.item.git_link}>Repo</Card.Link>
         </Card.Body>
    )}
     </div>

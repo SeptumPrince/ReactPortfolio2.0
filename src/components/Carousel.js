@@ -18,8 +18,8 @@ class Carousel extends React.Component {
           subTitle:
             "As COVID-19 quarantine guidelines begin to relax and local businesses reopen, many New Yorkers are feeling comfortable enough to leave their homes. In order to keep our vulnerable neighbors safe and taken care of, our website will help residents locate the nearest Covid-19 testing sites, free meals locations, and a COVID-19 related picture to remind them of the current pandemic.",
           imgSrc: screenshot_covid,
-          // git_link: "https://github.com/HexiangLiu/COVID-Project",
-          // deploy_link: "https://bit.ly/NQR_app",
+          git_link: "https://github.com/HexiangLiu/COVID-Project",
+          deploy_link: "https://bit.ly/NQR_app",
           // languages: ["jQuery", "API"],
           selected: false
         },
@@ -30,8 +30,8 @@ class Carousel extends React.Component {
             "iClassroom is an app for teacher-supervised student interactions. Students can sign-in to their account dashboard. Here, they can upload or create documents, and they can schedule learning sessions with one another. A separate teacher dashboard contains a gradebook and access/ display of all student materials.",
           imgSrc: screenshot_iclassroom,
           //       languages: ["JavaScript", "MongoDB"],
-          // git_link: "https://github.com/jamesrowe1/project2",
-          // deploy_link: "https://classroomhelper.herokuapp.com/",
+          git_link: "https://github.com/jamesrowe1/project2",
+          deploy_link: "https://classroomhelper.herokuapp.com/",
           selected: false
         },
         {
@@ -40,8 +40,8 @@ class Carousel extends React.Component {
           subTitle: "Application for people with diabetes",
           // imgSrc: screenshot_queens,
           // languages: ["React.js", "Bootstrap", "API"],
-          // git_link: "https://github.com/camrynnesullivan/dia-beat-this",
-          // deploy_link: "https://drag-race-react.herokuapp.com/",
+          git_link: "https://github.com/camrynnesullivan/dia-beat-this",
+          deploy_link: "https://drag-race-react.herokuapp.com/",
           selected: false
         },
         {
@@ -51,8 +51,8 @@ class Carousel extends React.Component {
             "This is an application made using React that allows you to view and sort the various drag queens from RuPaul's Drag Race.",
           // imgSrc: screenshot_queens,
           // languages: ["React.js", "Bootstrap", "API"],
-          // git_link: "https://github.com/SeptumPrince/EmployeeReact",
-          // deploy_link: "https://drag-race-react.herokuapp.com/",
+          git_link: "https://github.com/SeptumPrince/EmployeeReact",
+          deploy_link: "https://drag-race-react.herokuapp.com/",
           selected: false
         }
       ]
