@@ -11,7 +11,7 @@ function Card(props) {
       <img
         className="n-card-image"
         src={props.item.imgSrc}
-        alt={props.item.imgSrc}
+        alt={props.item.title}
       />
       {props.item.selected && (
         <CardInfo
