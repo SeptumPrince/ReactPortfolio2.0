@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card from "./Card";
+import ProjectCard from "./ProjectCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import screenshot_iclassroom from "../assets/images/screenshot_iclassroom.jpg";
@@ -78,7 +78,7 @@ class Carousel extends React.Component {
   makeItems = (items) => {
     return items.map((item) => {
       return (
-        <Card
+        <ProjectCard
           item={item}
           click={(e) => this.handleCardClick(item.id, e)}
           key={item.id}
