@@ -13,16 +13,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Septum Prince",
+      title: "Septum Prince Web Development",
       headerLinks: [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
         { title: "Contact", path: "/contact" }
       ],
       home: {
-        title: "Septum Prince Coding",
-        subTitle: "Dangerously Cheesy",
-        text: "Look at my work"
+        title: "Septum Prince",
+        subTitle: "Web Development",
+        text: "Dangerously Cheesy"
       },
       about: {
         title: "About"
@@ -38,7 +38,7 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Septum Prince </Navbar.Brand>
+            <Navbar.Brand>Septum Prince Web Development </Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
