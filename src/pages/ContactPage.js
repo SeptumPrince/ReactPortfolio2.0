@@ -7,8 +7,9 @@ import Card from 'react-bootstrap/Card'
 import Hero from "../components/Hero";
 import Content from "../components/Content";
 import Axios from "axios";
-
-import ContactForm from "../components/ContactForm"
+import ContactInfo from "../components/ContactPage/ContactInfo"
+import ContactSocial from "../components/ContactPage/ContactSocial"
+import ContactForm from "../components/ContactPage/ContactForm"
 
 class ContactPage extends React.Component {
   constructor(props) {
@@ -69,26 +70,25 @@ class ContactPage extends React.Component {
     return (
       <div className="page">
         <Hero title={this.props.title} />
-
-
-        <Accordion>
-  <Card>
-    <Card.Header>
-      <Accordion.Toggle as={Button} variant="link" eventKey="0">
-        Click me!
-      </Accordion.Toggle>
+        <ContactInfo />
+  <Accordion>
+    <Card>
+      <Card.Header>
+        <Accordion.Toggle as={Button} variant="link" eventKey="1">
+          Social
+        </Accordion.Toggle>
     </Card.Header>
-    <Accordion.Collapse eventKey="0">
-      <Card.Body>Hello! I'm the body</Card.Body>
+    <Accordion.Collapse eventKey="1">
+      <ContactSocial />
     </Accordion.Collapse>
   </Card>
   <Card>
     <Card.Header>
-      <Accordion.Toggle as={Button} variant="link" eventKey="1">
-        Click me!
+      <Accordion.Toggle as={Button} variant="link" eventKey="2">
+        Contact Form
       </Accordion.Toggle>
     </Card.Header>
-    <Accordion.Collapse eventKey="1">
+    <Accordion.Collapse eventKey="2">
       <Card.Body><ContactForm /></Card.Body>
     </Accordion.Collapse>
   </Card>

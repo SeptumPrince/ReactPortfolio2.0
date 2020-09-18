@@ -3,7 +3,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-import Content from "../components/Content";
+import Content from "../Content";
 import Axios from "axios";
 
 class ContactForm extends React.Component {
