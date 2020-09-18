@@ -9,6 +9,8 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import SeptumIcon from "./assets/images/septum_icon.png"
 
+const navTitles = ["Dangerously Cheesy", "Where's the Beef?", "The Breakfast of Champions", "Mmm, mmm good", "They're grrrrrrreat!",]
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -22,25 +24,34 @@ class App extends React.Component {
       home: {
         title: "Septum Prince",
         subTitle: "Web Development",
-        text: "Dangerously Cheesy"
+        // text: "Dangerously Cheesy"
       },
       about: {
         title: "About"
       },
       contact: {
         title: "Contact"
-      }
+      }, 
     };
+    this.getNavTitle = this.getNavTitle.bind(this)
   }
+
+ 
+
+  getNavTitle(){
+    return navTitles[Math.floor(Math.random() * navTitles.length)]
+  }
+
 
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
+        <Container className="p-0 container" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Septum Prince Web Development </Navbar.Brand>
+            <Navbar.Brand >{this.getNavTitle()}</Navbar.Brand>
 
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"><img src={SeptumIcon} height={40}/></Navbar.Toggle>
+            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle">
+            &#60;<img src={SeptumIcon} height={40}/>&#62;</Navbar.Toggle>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
