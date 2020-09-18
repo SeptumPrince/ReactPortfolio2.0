@@ -47,3 +47,11 @@ code {
   color: #ee6352;
   padding: 10px 15px;
 }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: "./assets/images/septum_icon.png"
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image:  "./assets/images/septum_icon.png"
+}

@@ -3,8 +3,9 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import screenshot_iclassroom from "../assets/images/screenshot_iclassroom.jpg";
-import screenshot_covid from "../assets/images/screenshot_covid.jpg";
+
+// import screenshot_iclassroom from "../assets/images/screenshot_iclassroom.png";
+// import screenshot_covid from "./screenshot_covid.png";
 // import queens from '../assets/images/evverest.png';
 
 class Carousel extends React.Component {
@@ -17,7 +18,7 @@ class Carousel extends React.Component {
           title: "Covid-19 Project",
           subTitle:
             "As COVID-19 quarantine guidelines begin to relax and local businesses reopen, many New Yorkers are feeling comfortable enough to leave their homes. In order to keep our vulnerable neighbors safe and taken care of, our website will help residents locate the nearest Covid-19 testing sites, free meals locations, and a COVID-19 related picture to remind them of the current pandemic.",
-          imgSrc: screenshot_covid,
+          // imgSrc: "covid",
           git_link: "https://github.com/HexiangLiu/COVID-Project",
           deploy_link: "https://bit.ly/NQR_app",
           // languages: ["jQuery", "API"],
@@ -28,7 +29,7 @@ class Carousel extends React.Component {
           title: "iClassroom",
           subTitle:
             "iClassroom is an app for teacher-supervised student interactions. Students can sign-in to their account dashboard. Here, they can upload or create documents, and they can schedule learning sessions with one another. A separate teacher dashboard contains a gradebook and access/ display of all student materials.",
-          imgSrc: screenshot_iclassroom,
+          // imgSrc: screenshot_iclassroom,
           //       languages: ["JavaScript", "MongoDB"],
           git_link: "https://github.com/jamesrowe1/project2",
           deploy_link: "https://classroomhelper.herokuapp.com/",

@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import SeptumIcon from "./assets/images/septum_icon.png"
 
 class App extends React.Component {
   constructor(props) {
@@ -40,7 +40,7 @@ class App extends React.Component {
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Septum Prince Web Development </Navbar.Brand>
 
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"><img src={SeptumIcon} height={40}/></Navbar.Toggle>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
