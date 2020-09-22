@@ -6,7 +6,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"
 export default function ContactSocial() {
 
-  return <Card.Body>
+  return <Card.Body> 
     <a href="https://www.linkedin.com/in/nathan-pecchia/" target="_blank">
     <FontAwesomeIcon icon={faLinkedin} />
     </a>

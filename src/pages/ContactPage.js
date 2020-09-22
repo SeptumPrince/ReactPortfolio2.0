@@ -66,32 +66,44 @@ class ContactPage extends React.Component {
       });
   };
 
+
+  state={
+    collapseID: "collapse3"
+  }
+  
+  toggleCollapse = collapseID => () =>
+  this.setState(prevState => ({
+    collapseID: prevState.collapseID !== collapseID ? collapseID : ""
+  }));
+
   render() {
     return (
       <div className="page">
         <Hero title={this.props.title} />
         <ContactInfo />
-  <Accordion>
-    <Card>
-      <Card.Header>
-        <Accordion.Toggle as={Button} variant="link" eventKey="1">
-          Social
-        </Accordion.Toggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="1">
-      <ContactSocial />
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    <Card.Header>
-      <Accordion.Toggle as={Button} variant="link" eventKey="2">
-        Contact Form
-      </Accordion.Toggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="2">
-      <Card.Body><ContactForm /></Card.Body>
-    </Accordion.Collapse>
-  </Card>
+      <Accordion >
+        <Card style={{ backgroundColor: '#FEB20A', border: "none"  }}>
+       
+            <Accordion.Toggle as={Button} variant="h5" eventKey="1" style={{paddingLeft: 0}}>
+            <Card.Title variant="h4" style={{paddingLeft: 20, textAlign: "left"}}>
+              Social
+              </Card.Title>
+            </Accordion.Toggle>
+        
+        <Accordion.Collapse eventKey="1">
+          <ContactSocial />
+        </Accordion.Collapse>
+      </Card>
+      {/* <Card>
+        <Card.Header>
+          <Accordion.Toggle as={Button} variant="link" eventKey="2">
+            Contact Form
+          </Accordion.Toggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="2">
+          <Card.Body><ContactForm /></Card.Body>
+        </Accordion.Collapse>
+      </Card> */}
 </Accordion>
 
 
