@@ -7,13 +7,13 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"
 export default function ContactSocial() {
 
   return <Card.Body className="social"> 
-    <a href="https://www.linkedin.com/in/nathan-pecchia/" target="_blank">
-    <FontAwesomeIcon icon={faLinkedin} size="4x" color="black" className="icon"/>
+    <a href="https://www.linkedin.com/in/nathan-pecchia/" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faLinkedin} size="4x" color="black" className="icon" />
     </a>
-    <a href="https://github.com/SeptumPrince" target="_blank">
-    <FontAwesomeIcon icon={faGithubSquare} size="4x" color="black" className="icon"className="icon"/>
+    <a href="https://github.com/SeptumPrince" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faGithubSquare} size="4x" color="black" className="icon"/>
     </a>
-    <a href="https://www.instagram.com/nathanrobertpecchia/" target="_blank">
+    <a href="https://www.instagram.com/nathanrobertpecchia/" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faInstagram} size="4x" color="black" className="icon"/>
     </a>
 

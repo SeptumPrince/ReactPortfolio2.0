@@ -52,7 +52,7 @@ class App extends React.Component {
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle">
             &#60;
-            <img src={SeptumIcon} height={40}/>
+            <img src={SeptumIcon} height={40} alt="SeptumIcon"/>
             &#62;
             </Navbar.Toggle>
             <Navbar.Collapse id="navbar-toggle">

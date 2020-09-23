@@ -1,15 +1,13 @@
 import React from "react";
 
-import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import Hero from "../components/Hero";
-import Content from "../components/Content";
 import Axios from "axios";
 import ContactInfo from "../components/ContactPage/ContactInfo"
 import ContactSocial from "../components/ContactPage/ContactSocial"
-import ContactForm from "../components/ContactPage/ContactForm"
+// import ContactForm from "../components/ContactPage/ContactForm"
 
 class ContactPage extends React.Component {
   constructor(props) {
