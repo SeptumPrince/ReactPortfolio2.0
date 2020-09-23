@@ -5,7 +5,7 @@ import CardInfo from "./CardInfo";
 function ProjectCard(props) {
   return (
     <div
-      className="n-inline-block g-card"
+      className="n-inline-block n-card"
       onClick={(e) => props.click(props.item)}
     >
       <img

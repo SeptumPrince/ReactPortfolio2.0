@@ -3,7 +3,6 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-
 import screenshot_queens from "../assets/images/queens.jpg";
 import screenshot_diabeatthis from "../assets/images/diabeatthis.jpg";
 import screenshot_covid from "../assets/images/covid.jpg";
@@ -68,21 +67,23 @@ class Carousel extends React.Component {
   makeItems = (items) => {
     return items.map((item) => {
       return (
+
         <ProjectCard
-          className="projectCard"
+          className=""
           item={item}
           click={(e) => this.handleCardClick(item.id, e)}
           key={item.id}
         />
+ 
       );
     });
   };
 
   render() {
     return (
-      <Container fluid={true}>
+      <Container fluid={true} >
         <Row className="justify-content-around">
-          {this.makeItems(this.state.items)}
+          {this.makeItems(this.state.items)}    
         </Row>
       </Container>
     );
