@@ -47,11 +47,14 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0 container" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar bg="transparent" expand="lg">
             <Navbar.Brand >{this.getNavTitle()}</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle">
-            &#60;<img src={SeptumIcon} height={40}/>&#62;</Navbar.Toggle>
+            &#60;
+            <img src={SeptumIcon} height={40}/>
+            &#62;
+            </Navbar.Toggle>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
