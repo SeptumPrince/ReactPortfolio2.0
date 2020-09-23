@@ -81,12 +81,12 @@ class ContactPage extends React.Component {
       <div className="page">
         <Hero title={this.props.title} />
         <ContactInfo />
-      <Accordion >
+      <Accordion>
         <Card style={{ backgroundColor: '#FEB20A', border: "none"  }}>
        
             <Accordion.Toggle as={Button} variant="h5" eventKey="1" style={{paddingLeft: 0}}>
             <Card.Title variant="h4" style={{paddingLeft: 20, textAlign: "left"}}>
-              Social
+              <b>Social</b>
               </Card.Title>
             </Accordion.Toggle>
         

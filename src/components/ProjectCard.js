@@ -8,11 +8,6 @@ function ProjectCard(props) {
       className="n-inline-block n-card"
       onClick={(e) => props.click(props.item)}
     >
-      <img
-        className="n-card-image"
-        src={props.item.imgSrc}
-        alt={props.item.title}
-      />
       {props.item.selected && (
         <Card.Body>
           <Card.Text>
@@ -26,6 +21,12 @@ function ProjectCard(props) {
           <Card.Link href={props.item.git_link} target="_blank">Repo</Card.Link>
         </Card.Body>
    )}
+      <img
+        className="n-card-image"
+        src={props.item.imgSrc}
+        alt={props.item.title}
+      />
+      
     </div>
   );
 }

@@ -15,7 +15,7 @@ class Carousel extends React.Component {
         {
           id: 0,
           title: "DiaBeatThis!",
-          subTitle: "Application for people with diabetes",
+          subTitle: "Use this app to track blood sugar levels, A1C numbers, daily carbohydrate and caloric goals, taking note of your emotions during the day, and learn more about how to take care of your bodies.",
           imgSrc: screenshot_diabeatthis,
           // languages: ["React.js", "Bootstrap", "API"],
           git_link: "https://github.com/camrynnesullivan/dia-beat-this",
