@@ -10,6 +10,12 @@ body {
 
 }
 
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -54,6 +60,13 @@ code {
 
 .p-0 {
   background-color: #FEB20A;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+}
+.container {
+  min-width: 100%
 }
 
 .hero {
