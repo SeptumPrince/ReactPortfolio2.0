@@ -22,15 +22,18 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.3",
     "react-spring": "^8.0.27",
+    "serve": "^11.3.2",
     "typescript": "^4.0.2",
     "urix": "^0.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+    },
   "eslintConfig": {
     "extends": "react-app"
   },
