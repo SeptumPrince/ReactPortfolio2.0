@@ -5,7 +5,7 @@ import CardInfo from "./CardInfo";
 function ProjectCard(props) {
   return (
     <Card
-      className="flex-row n-card"
+      className="flex-row n-card border-0"
       onClick={(e) => props.click(props.item)}
     >
         <img
