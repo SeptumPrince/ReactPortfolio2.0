@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Row from "react-bootstrap/Row";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -24,7 +25,7 @@ class App extends React.Component {
       home: {
         title: "Septum Prince",
         subTitle: "Web Development",
-        // text: "Dangerously Cheesy"
+        text: "Click a project to read more..."
       },
       about: {
         title: "About"
@@ -50,9 +51,16 @@ class App extends React.Component {
           <Navbar bg="transparent" expand="lg">
             <Navbar.Brand >{this.getNavTitle()}</Navbar.Brand>
 
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle">
+            <Navbar.Toggle className="border-0 d-flex flex-row" style={{lineHeight: '30px'}} aria-controls="navbar-toggle">
             &#60;
-            <img src={SeptumIcon} height={40} alt="SeptumIcon"/>
+            <Container fluid className="d-flex flex-column">
+              <Row>
+          <img src={SeptumIcon} height={40} alt="SeptumIcon"/>
+          </Row>
+          <Row>
+          <span id="menu-text">MENU</span>
+          </Row>
+            </Container>
             &#62;
             </Navbar.Toggle>
             <Navbar.Collapse id="navbar-toggle">

@@ -12,7 +12,7 @@ function Footer() {
             {/* Text */}
           </Col>
           <Col className="p-0 d-flex justify-content-left" md={3}>
-            Use the piercing in the top right corner to switch pages.
+           I'm currently strenghtening my React.js skills through a course on Udemy. Stay posted for new projects!
           </Col>
         </Row>
       </Container>

@@ -15,7 +15,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* .menu-button{
+  height: 10px;
+} */
 
+#menu-text {
+font-size:10px;
+line-height: 2px;
+}
 
 .n-card {
   margin: 20px;
